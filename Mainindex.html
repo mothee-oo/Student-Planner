@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Planner</title>
+    <link rel="stylesheet" href="Mainstyle.css">
+   
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p>Plan.Track.<span>Achieve</span></p>
+        </div>
+        <img src="Images/icons8-pencil-drawing-80.png" alt="Pencil">
+    </header>
+
+    <nav>
+        <div class="title">
+            <h1>The student dashboard</h1>
+           <p  id="clock">0:00</p>
+           
+        </div>
+    
+        <div class="motivation">
+            <img src="Images/icons8-planner-100.png" alt="Planner icon"><div class="divider"></div>
+            <p> "Tough times never last, only tough people last"</p>
+        </div>      
+    </nav>
+    
+    <section >
+        <div class="nav-links">
+            <h2><i>Navigation</i></h2>
+            <div class="img-links">
+            <img src="Images/icons8-time-50.png" alt="HourGlass" >
+            <a href="Time-block.html">Time-Block List</a>
+            <img src="Images/icons8-assignment-100.png" alt="Assignment tracker">
+            <a href="AssignTracker.html">Assignment Tracker</a> 
+            <img src="Images/icons8-to-do-list-50.png" alt="To do list"> 
+            <a href="Finals.html"Finals Schedules>Finals Schedule</a></div>
+        </div>
+        <div class="quick-links">
+            <h2><i>Quick-Links</i></h2>
+            <a href="youtube.com">Youtube</a>
+            <a href="chatgpt.com">ChatGPT</a>
+            <a href="studocu">studocu</a>
+            <a href="#">Pomodoro-Timer</a>
+        </div>
+
+        <img src="Images/Sullivans Leaf Pattern Bud Vase 14_H; Green 1.png" alt="" class="flower">
+       
+    
+    </section>
+
+    <main>
+        <div id="class-container">
+            <h2><i>Classes</i></h2>
+            <div class="class-boxes">
+                <div class="Classes">
+                    <div class="class-input">
+                      <textarea  id ="classname"  placeholder="Class 1.."></textarea>
+                      <textarea id ="class-code" placeholder="code"></textarea>
+                      <textarea  id ="assignment-number"  placeholder="# Assignments"></textarea>
+                      
+                     </div>
+                </div>
+                <button id="Add-btn"></button>
+
+            </div>                        
+        </div>
+    </main>
+
+    <div id="CalenderClass">
+        <div id="calenderHeader">
+            <div id="MonthName"></div>
+            <div id="HeaderButtons">
+                <button class="button"  id="Back">Back</button>
+                <button class="button" id="Next">Next</button>
+            </div>
+        </div>
+
+        <div id="CalenderContent">
+            <div id="WeekDays">
+                <div class="Days">Sunday</div>
+                <div class="Days">Monday</div>
+                <div class="Days">Tuesday</div>
+                <div class="Days">Wednesday</div>
+                <div class="Days">Thursday</div>
+                <div class="Days">Friday</div>
+                <div class="Days">Saterday</div>
+            </div>
+            <div id="WeekBox"></div>
+        </div>
+     
+        <div id="ModalBackDrop"></div>
+
+     <div id="NewEvenModal">
+          <h2 class="EventHeader">Event</h2>
+         <input type="text"  id="EventTitle" placeholder="Add your event..">
+
+         <div class="EventBtns">
+          <button id="Save">Save</button>
+          <button id="Cancel">Cancel</button>
+        </div>
+     </div>
+
+
+     <div id="deleteEventModal">
+        <h2 class="deleteH2">Event</h2>
+        
+        <P id="EventText"></P>
+        
+        <div class="deleteeventsbuttons">
+        <button id="deletebtn">Delete</button>
+        <button id="CloseBtn">Close</button>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    </div>
+    
+
+
+
+
+
+</body>
+<script src="Mainscript.js"></script>
+ 
